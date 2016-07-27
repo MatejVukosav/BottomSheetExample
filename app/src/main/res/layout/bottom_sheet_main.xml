@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/design_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_bright"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="60dp"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        tools:showIn="@layout/activity_main">
+
+        <TextView
+            android:id="@+id/txt_bottom_sheet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@android:drawable/ic_media_ff"
+            android:drawablePadding="15dp"
+            android:drawableStart="@android:drawable/ic_media_ff"
+            android:gravity="center_vertical"
+            android:text="Expande me!"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:drawableLeft="@android:drawable/ic_lock_silent_mode_off"
+            android:drawablePadding="15dp"
+            android:drawableStart="@android:drawable/ic_lock_silent_mode_off"
+            android:gravity="center_vertical"
+            android:text="Smanji nesto"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <ImageView
+            android:id="@+id/picture1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <ImageView
+            android:id="@+id/picture2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/sym_def_app_icon" />
+
+        <ImageView
+            android:id="@+id/picture3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/sym_def_app_icon" />
+    </LinearLayout>
+
+</layout>
